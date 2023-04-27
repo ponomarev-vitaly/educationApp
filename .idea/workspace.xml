@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added url, username, password, Connection db.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EducationApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EducationApp.iml" afterDir="false" />
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added while loop to print student_ID, fName, lName, gender, dob.">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682556830166</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I added while loop to print student_ID, fName, lName, gender, dob.">
+      <created>1682559625497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682559625498</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I added initial files to start Education Application." />
     <MESSAGE value="I added url, username, password, Connection db." />
-    <option name="LAST_COMMIT_MESSAGE" value="I added url, username, password, Connection db." />
+    <MESSAGE value="I added while loop to print student_ID, fName, lName, gender, dob." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added while loop to print student_ID, fName, lName, gender, dob." />
   </component>
 </project>
