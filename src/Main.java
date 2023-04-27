@@ -62,17 +62,21 @@ public class Main {
 //        System.out.println("<-------------------------------------------------------->");
 //
         // Call the Main Menu.
-        while(input.compareTo("P") != 0){
-            System.out.println("\n\n");
-            if(mainMenu){
-                displayMainMenu();
-            } else if (stdMenu){
-                displayStdMenu();
-            } else if (crMenu){
-                displayCourseMenu();
-            } else if(tcMenu){
-                displayTCMenu();
+        try {
+            while(input.compareTo("P") != 0){
+                System.out.println("\n\n");
+                if(mainMenu){
+                    displayMainMenu();
+                } else if (stdMenu){
+                    displayStdMenu();
+                } else if (crMenu){
+                    displayCourseMenu();
+                } else if(tcMenu){
+                    displayTCMenu();
+                }
             }
+        } catch (SQLException e) {
+            System.out.println("We have DB issue, please reach to Help Desk.");
         }
     }
 
