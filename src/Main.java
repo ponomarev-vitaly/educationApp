@@ -1,3 +1,5 @@
+import main.java.service.DatabaseService;
+
 import java.sql.*;
 import java.util.Locale;
 import java.util.Scanner;
@@ -17,6 +19,7 @@ public class Main {
     private static boolean isList = true;
     private static boolean isUpdate = true;
     private static boolean isDelete = true;
+    private static DatabaseService dbs = new DatabaseService();
 
     public static void main(String[] args) {
         /**
@@ -28,36 +31,37 @@ public class Main {
          * 6. close the connection (close the workbench);
          */
 
-        try {
-            String url = "jdbc:mysql://localhost:3306/edu_pract"; // Java data base connection.
-            String username = "root";
-            String password = "volgogradskaya3-60";
-            Connection db = DriverManager.getConnection(url, username, password);
-
-            Statement st = db.createStatement();
-
-            // Insert data in the student table.
-            st.execute("INSERT INTO student values (12, 'Mustafa', 'Onat', 'M', '1999-06-10')");
-            ResultSet rs = st.executeQuery("Select * from student"); // Make a query.
-
-            while (rs.next()) {
-                // System.out.println(rs.getInt(2));
-                System.out.println(rs.getInt("student_ID") + "\t\t" +
-                                   rs.getString("fName") + "\t\t" +
-                                   rs.getString("lName") + "\t\t" +
-                                   rs.getString("gender") + "\t\t" +
-                                   rs.getString("dob"));
-            }
-
-            // System.out.println("We are all good!");
-            db.close(); // Close DB connection.
-
-        } catch (SQLException e) {
-            // System.out.println("We have a DB error!");;
-        }
-
-        System.out.println("<-------------------------------------------------------->");
-
+//        try {
+//            String url = "jdbc:mysql://localhost:3306/edu_pract"; // Java data base connection.
+//            String username = "root";
+//            String password = "volgogradskaya3-60";
+//            Connection db = DriverManager.getConnection(url, username, password);
+//
+//            Statement st = db.createStatement();
+//
+//            // Insert data in the student table.
+//            st.execute("INSERT INTO student values (12, 'Mustafa', 'Onat', 'M', '1999-06-10')");
+//            ResultSet rs = st.executeQuery("Select * from student"); // Make a query.
+//
+//            while (rs.next()) {
+//                // System.out.println(rs.getInt(2));
+//                System.out.println(rs.getInt("student_ID") + "\t\t" +
+//                                   rs.getString("fName") + "\t\t" +
+//                                   rs.getString("lName") + "\t\t" +
+//                                   rs.getString("gender") + "\t\t" +
+//                                   rs.getString("dob"));
+//            }
+//
+//            // System.out.println("We are all good!");
+//            db.close(); // Close DB connection.
+//
+//        } catch (SQLException e) {
+//            // System.out.println("We have a DB error!");;
+//        }
+//
+//        System.out.println("<-------------------------------------------------------->");
+//
+        // Call the Main Menu.
         while(input.compareTo("P") != 0){
             System.out.println("\n\n");
             if(mainMenu){
@@ -93,7 +97,7 @@ public class Main {
         }
     }
 
-    private static void displayStdMenu(){
+    private static void displayStdMenu() throws SQLException {
         System.out.println("------------------EDUCATION APPLICATION------------------");
         System.out.println("------------------     STUDENT MENU    ------------------");
         System.out.println("(A)DD NEW STUDENT");
@@ -109,6 +113,7 @@ public class Main {
             System.out.println("Here we will add a new student");
         } else if(input.compareTo("L") == 0){
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");
+            dbs.allStdList();
         } else if(input.compareTo("U") == 0) {
             System.out.println("Here we will update a student");
         } else if(input.compareTo("D") == 0) {
