@@ -108,7 +108,7 @@ public class Main {
         if(input.compareTo("A") == 0){
             System.out.println("Here we will add a new student");
         } else if(input.compareTo("L") == 0){
-            System.out.println("Here we will display the list of students");
+            System.out.println("\n\n------------------     STUDENT LIST    ------------------");
         } else if(input.compareTo("U") == 0) {
             System.out.println("Here we will update a student");
         } else if(input.compareTo("D") == 0) {
