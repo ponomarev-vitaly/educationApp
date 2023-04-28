@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I created POJO class Student.">
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added 2 constructors, getter and setter methods, toString() method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682640763227</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="I added 2 constructors, getter and setter methods, toString() method.">
+      <created>1682641842766</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682641842766</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +159,7 @@
     <MESSAGE value="I added try catch block for the Main Menu." />
     <MESSAGE value="I added QueryUtil class." />
     <MESSAGE value="I created POJO class Student." />
-    <option name="LAST_COMMIT_MESSAGE" value="I created POJO class Student." />
+    <MESSAGE value="I added 2 constructors, getter and setter methods, toString() method." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added 2 constructors, getter and setter methods, toString() method." />
   </component>
 </project>

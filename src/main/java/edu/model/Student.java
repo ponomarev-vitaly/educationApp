@@ -65,9 +65,15 @@ public class Student {
     public void setDob(Date dob) {
         this.dob = dob;
     }
-
+// We should add more logic in printing out the information from the table.
     public String toString(){
-        return  (student_id < 10 ? " " : " ") + student_id + " -> " + fName.toUpperCase() + " " + lName.toUpperCase() +
-                " (" + gender + ") | DOB -> " + dob;
+        String initial = (student_id < 10 ? " " : " ") + student_id + " -> " + fName.toUpperCase() + " " + lName.toUpperCase();
+        
+        for (int initialSize = initial.length(); initialSize <= 30; initialSize++) {
+            initial += " ";
+        }
+
+        initial += "\t (" + gender + ") | DOB -> " + dob;
+        return initial;
     }
 }
