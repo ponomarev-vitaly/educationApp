@@ -135,7 +135,7 @@ public class Main {
             dbs.allStdList();
             System.out.println("Enter Student ID > ");
             int id = scan.nextInt();
-            System.out.println("Please type \"Delete\" to validate the action > ");
+            System.out.println("Please type Delete to validate the action > ");
             String confirm = scan.next();
             if(id > 0 && confirm.compareTo("Delete")==0){
                 dbs.deleteStd(id); // Method to delete student.
