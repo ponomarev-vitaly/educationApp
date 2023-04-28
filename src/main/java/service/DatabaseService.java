@@ -67,7 +67,9 @@ public class DatabaseService {
             PreparedStatement ps = cn.prepareStatement(qu.theStd())){
             ps.setInt(1, stdId);
             ResultSet rs = ps.executeQuery();
-            std = new Student(rs.getString("fName"), rs.getString("lName"), rs.getString("gender"), rs.getDate("dob"));
+            if (rs.next()) {
+                std = new Student(rs.getString("fName"), rs.getString("lName"), rs.getString("gender"), rs.getDate("dob"));
+            }
         }
 
         return std;
