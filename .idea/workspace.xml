@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added new inputs for first name, last name, gender, date of birth.">
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added delete method to delete the Student.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" afterDir="false" />
     </list>
@@ -161,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682643273393</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="I added new inputs for first name, last name, gender, date of birth of the student.">
+      <created>1682647046690</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682647046690</updated>
+    </task>
+    <task id="LOCAL-00015" summary="I added delete method to delete the Student.">
+      <created>1682647078748</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682647078748</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +191,8 @@
     <MESSAGE value="I added 2 constructors, getter and setter methods, toString() method." />
     <MESSAGE value="I made some modifications in toString() method in order to add more logic in displaying the data on a Display." />
     <MESSAGE value="I added new inputs for first name, last name, gender, date of birth." />
-    <option name="LAST_COMMIT_MESSAGE" value="I added new inputs for first name, last name, gender, date of birth." />
+    <MESSAGE value="I added new inputs for first name, last name, gender, date of birth of the student." />
+    <MESSAGE value="I added delete method to delete the Student." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added delete method to delete the Student." />
   </component>
 </project>

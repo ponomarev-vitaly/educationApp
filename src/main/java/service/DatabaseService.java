@@ -44,7 +44,20 @@ public class DatabaseService {
     }
 
     // Created method to delete student.
-    public void deleteStd(int stdId){
-        System.out.println("Here we will delete the student " + stdId);
+    public void deleteStd(int stdId) throws SQLException {
+        try(
+            Connection cn = dbu.connect();
+            PreparedStatement ps = cn.prepareStatement(qu.deleteStd())){
+            ps.setInt(1, stdId);
+            int check = ps.executeUpdate();
+            if(check > 0){
+                System.out.println("Selected student removed from the system");
+            }else{
+                System.out.println("Selected student could not be removed from the system. Please try again.");
+            }
+
+        }
+
+        // System.out.println("Here we will delete the student " + stdId);
     }
 }

@@ -6,6 +6,10 @@ public class QueryUtil {
     }
 
     public String addStd(){
-        return "INSERT INTO student (fName, lName, gender, dob) VALUES(?,?,?,?)"; // Add values.
+        return "INSERT INTO student (fName, lName, gender, dob) VALUES(?,?,?,?)";
+    }
+
+    public String deleteStd(){
+        return "DELETE FROM student WHERE (student_id = ?)";
     }
 }
