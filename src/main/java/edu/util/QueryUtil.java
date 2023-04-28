@@ -12,4 +12,8 @@ public class QueryUtil {
     public String deleteStd(){
         return "DELETE FROM student WHERE (student_id = ?)";
     }
+
+    public String theStd(){
+        return "SELECT * FROM student WHERE student_id = ?";
+    }
 }

@@ -129,7 +129,14 @@ public class Main {
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");
             dbs.allStdList();
         } else if(input.compareTo("U") == 0) {
-            System.out.println("Here we will update a student");
+            System.out.println("\n\n------------------     STUDENT LIST    ------------------");
+            dbs.allStdList();
+            System.out.println("Enter student ID > ");
+            int id = scan.nextInt();
+            Student std = dbs.theStd(id);
+            if(std != null){
+                System.out.println(std.toString());
+            }
         } else if(input.compareTo("D") == 0) {
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");
             dbs.allStdList();

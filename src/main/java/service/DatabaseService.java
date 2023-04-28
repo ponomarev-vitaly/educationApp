@@ -60,4 +60,16 @@ public class DatabaseService {
 
         // System.out.println("Here we will delete the student " + stdId);
     }
+
+    public Student theStd(int stdId) throws SQLException{
+        Student std = null;
+        try(Connection cn = dbu.connect();
+            PreparedStatement ps = cn.prepareStatement(qu.theStd())){
+            ps.setInt(1, stdId);
+            ResultSet rs = ps.executeQuery();
+            std = new Student(rs.getString("fName"), rs.getString("lName"), rs.getString("gender"), rs.getDate("dob"));
+        }
+
+        return std;
+    }
 }
