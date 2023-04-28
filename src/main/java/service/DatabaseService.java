@@ -1,5 +1,6 @@
 package main.java.service;
 
+import main.java.edu.model.Student;
 import main.java.edu.util.DatabaseUtil;
 import main.java.edu.util.QueryUtil;
 
@@ -17,9 +18,13 @@ public class DatabaseService {
                 Connection cn = dbu.connect();
                 Statement st = cn.createStatement();
                 ResultSet rs = st.executeQuery(qu.allStdList());
-        ){
-            while(rs.next()){
-                System.out.println(rs.getString("fName") + " " + rs.getString("lName"));
+        ) {
+
+            Student std = null;
+            while (rs.next()) {
+                std = new Student(rs.getInt("student_id"), rs.getString("fName"), rs.getString("lName"),
+                        rs.getString("gender"), rs.getDate("dob"));
+                System.out.println(std.toString());
             }
         }
     }
