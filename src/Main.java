@@ -135,7 +135,14 @@ public class Main {
             int id = scan.nextInt();
             Student std = dbs.theStd(id);
             if(std != null){
-                System.out.println(std.toString());
+                System.out.println("\n\n--------     Select one detail to update    ---------");
+                System.out.println("1. First Name -> " + std.getfName());
+                System.out.println("2. Last Name -> " + std.getlName());
+                System.out.println("3. Gender -> " + std.getGender());
+                System.out.println("4. Date of birth -> " + std.getDob());
+                System.out.println("-------------------------------------------------------->");
+                int detail = scan.nextInt();
+                dbs.updateStd(id, detail);
             }
         } else if(input.compareTo("D") == 0) {
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");

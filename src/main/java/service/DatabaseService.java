@@ -74,4 +74,22 @@ public class DatabaseService {
 
         return std;
     }
+
+    public void updateStd(int stdId, int detail){
+        System.out.println("We are about to update student " + stdId);
+        switch (detail){
+            case 1:
+                System.out.println("First Name will be updated ");
+                break;
+            case 2:
+                System.out.println("Last Name will be updated ");
+                break;
+            case 3:
+                System.out.println("Gender will be updated ");
+                break;
+            case 4:
+                System.out.println("Date of birth will be updated ");
+                break;
+        }
+    }
 }
