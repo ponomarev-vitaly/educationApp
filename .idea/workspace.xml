@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added DatabaseService and DatabaseUtil. I also checked the code and fixed small issues.">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added try catch block for the Main Menu.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682639357599</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I added try catch block for the Main Menu.">
+      <created>1682639453544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682639453544</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +136,7 @@
     <MESSAGE value="I uncommented the piece of code with the establishing connection with the DB." />
     <MESSAGE value="I added student list and a piece of code in it." />
     <MESSAGE value="I added DatabaseService and DatabaseUtil. I also checked the code and fixed small issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="I added DatabaseService and DatabaseUtil. I also checked the code and fixed small issues." />
+    <MESSAGE value="I added try catch block for the Main Menu." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added try catch block for the Main Menu." />
   </component>
 </project>
