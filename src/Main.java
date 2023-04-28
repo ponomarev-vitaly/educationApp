@@ -114,7 +114,16 @@ public class Main {
 
         input = scan.next().toUpperCase().substring(0,1);
         if(input.compareTo("A") == 0){
-            System.out.println("Here we will add a new student");
+            System.out.println("\n\n----------------     ADD A NEW STUDENT    ---------------");
+            System.out.println("First Name: ");
+            String fName = scan.next().trim().toUpperCase();
+            System.out.println("Last Name: ");
+            String lName = scan.next().trim().toUpperCase();
+            System.out.println("Gender (F/M): ");
+            String gender = scan.next().trim().toUpperCase().substring(0,1);
+            System.out.println("Date of Birth (yyyy-mm-dd): ");
+            String dob = scan.next().trim();
+            // dbs.addStd();
         } else if(input.compareTo("L") == 0){
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");
             dbs.allStdList();
