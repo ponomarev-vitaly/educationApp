@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I made some modifications in toString() method in order to add more logic in displaying the data on a Display.">
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added new inputs for first name, last name, gender, date of birth.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DatabaseService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682642353757</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="I added new inputs for first name, last name, gender, date of birth.">
+      <created>1682643273393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682643273393</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +178,7 @@
     <MESSAGE value="I created POJO class Student." />
     <MESSAGE value="I added 2 constructors, getter and setter methods, toString() method." />
     <MESSAGE value="I made some modifications in toString() method in order to add more logic in displaying the data on a Display." />
-    <option name="LAST_COMMIT_MESSAGE" value="I made some modifications in toString() method in order to add more logic in displaying the data on a Display." />
+    <MESSAGE value="I added new inputs for first name, last name, gender, date of birth." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added new inputs for first name, last name, gender, date of birth." />
   </component>
 </project>

@@ -1,6 +1,6 @@
 package main.java.edu.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Student {
     // POJO -> Plain Old Java Object

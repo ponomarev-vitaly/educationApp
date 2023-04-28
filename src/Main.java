@@ -1,3 +1,4 @@
+import main.java.edu.model.Student;
 import main.java.service.DatabaseService;
 
 import java.sql.*;
@@ -123,14 +124,24 @@ public class Main {
             String gender = scan.next().trim().toUpperCase().substring(0,1);
             System.out.println("Date of Birth (yyyy-mm-dd): ");
             String dob = scan.next().trim();
-            // dbs.addStd();
+            dbs.addStd(new Student(fName, lName, gender, Date.valueOf(dob)));
         } else if(input.compareTo("L") == 0){
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");
             dbs.allStdList();
         } else if(input.compareTo("U") == 0) {
             System.out.println("Here we will update a student");
         } else if(input.compareTo("D") == 0) {
-            System.out.println("Here we will delete a student");
+            System.out.println("\n\n------------------     STUDENT LIST    ------------------");
+            dbs.allStdList();
+            System.out.println("Enter Student ID > ");
+            int id = scan.nextInt();
+            System.out.println("Please type \"Delete\" to validate the action > ");
+            String confirm = scan.next();
+            if(id > 0 && confirm.compareTo("Delete")==0){
+                dbs.deleteStd(id); // Method to delete student.
+            }else{
+                System.out.println("Delete validation failed...");
+            }
         } else if(input.compareTo("M") == 0){
             stdMenu = false;
             mainMenu = true;
