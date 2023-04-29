@@ -13,9 +13,9 @@ public class Main {
     private static String input = "";
     /*C-reate, R-ead, U-pdate, D-elete*/
     private static boolean mainMenu = true;
-    private static boolean stdMenu = true;
-    private static boolean crMenu = true;
-    private static boolean tcMenu = true;
+    private static boolean stdMenu = false;
+    private static boolean crMenu = false;
+    private static boolean tcMenu = false;
     private static boolean isNew = true;
     private static boolean isList = true;
     private static boolean isUpdate = true;
@@ -194,9 +194,26 @@ public class Main {
         mainMenu = true;
     }
 
-    private static void displayTCMenu(){
-        System.out.println("UNDER DEVELOPMENT");
-        tcMenu = false;
-        mainMenu = true;
+    private static void displayTCMenu() throws SQLException {
+        System.out.println("------------------EDUCATION APPLICATION------------------");
+        System.out.println("---------------     TAKEN COURSES MENU    ---------------");
+        System.out.println("List by (C)ourse");
+        System.out.println("List by (S)tudent");
+        System.out.println("(L)ist failed and passed courses");
+        System.out.println("(M)ain menu");
+        System.out.println("(P)ower off");
+        System.out.print("-------------------------------------------------------->");
+        input = scan.next().toUpperCase().substring(0,1);
+        if(input.compareTo("C") == 0){
+            System.out.println("Here we will display list based on courses");
+        }else if(input.compareTo("S") == 0){
+            System.out.println("\n\n------     STUDENTS WHO TOOK COURSE    ------- ");
+            dbs.stdListTC();
+        }if(input.compareTo("L") == 0){
+            System.out.println("Display failed and passed courses");
+        }if (input.compareTo("M") == 0) {
+            tcMenu = false;
+            mainMenu = true;
+        }
     }
 }

@@ -36,4 +36,9 @@ public class QueryUtil {
         result += " WHERE student_id = ? ";
         return result;
     }
+
+    public String stdListTC(){
+        return "Select student_id, concat(fName, ' ' , lName) as name " + " from student where student_id in " +
+        " (Select distinct(student_id) From TakenCourse)";
+    }
 }

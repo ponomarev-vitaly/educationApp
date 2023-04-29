@@ -102,4 +102,20 @@ public class DatabaseService {
             }
         }
     }
+
+    public void stdListTC() throws SQLException{
+        try(Connection cn = dbu.connect();
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(qu.stdListTC())){
+            while (rs.next()) {
+                if (rs.getInt("student_id") < 10) {
+                    System.out.print(" ");
+                }
+                System.out.print(rs.getInt("student_id") + "\t -> ");
+                System.out.print(rs.getString("name") + " \n");
+            }
+        }
+
+
+    }
 }
