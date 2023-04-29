@@ -209,6 +209,11 @@ public class Main {
         }else if(input.compareTo("S") == 0){
             System.out.println("\n\n------     STUDENTS WHO TOOK COURSE    ------- ");
             dbs.stdListTC();
+            System.out.println("-------------------------------------------------------->");
+            System.out.print("Please enter Student ID > ");
+            int stdId = scan.nextInt();
+            dbs.stdCourseTC(stdId);
+
         }if(input.compareTo("L") == 0){
             System.out.println("Display failed and passed courses");
         }if (input.compareTo("M") == 0) {

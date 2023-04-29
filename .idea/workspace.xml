@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added ced for update method and modified the code to make it work well.">
+    <list default="true" id="7df2c415-8897-453a-aded-28bc77593e96" name="Changes" comment="I added menu for taken courses and modified the code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/util/QueryUtil.java" afterDir="false" />
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682727078596</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="I added menu for taken courses and modified the code.">
+      <created>1682731312398</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682731312398</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -234,6 +241,7 @@
     <MESSAGE value="No changes were made to code." />
     <MESSAGE value="I fixed small issues by applying modifications to code." />
     <MESSAGE value="I added ced for update method and modified the code to make it work well." />
-    <option name="LAST_COMMIT_MESSAGE" value="I added ced for update method and modified the code to make it work well." />
+    <MESSAGE value="I added menu for taken courses and modified the code." />
+    <option name="LAST_COMMIT_MESSAGE" value="I added menu for taken courses and modified the code." />
   </component>
 </project>

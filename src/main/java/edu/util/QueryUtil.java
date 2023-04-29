@@ -41,4 +41,10 @@ public class QueryUtil {
         return "Select student_id, concat(fName, ' ' , lName) as name " + " from student where student_id in " +
         " (Select distinct(student_id) From TakenCourse)";
     }
+
+    public String stdCourseTc(){
+        return "SELECT name, finalScore FROM " +
+        " TakenCourse tc JOIN Course c on (tc.course_id = c.course_id) " +
+        " WHERE student_id = ? ";
+    }
 }

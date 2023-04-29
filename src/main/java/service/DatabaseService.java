@@ -115,7 +115,30 @@ public class DatabaseService {
                 System.out.print(rs.getString("name") + " \n");
             }
         }
+    }
 
+    public void stdCourseTC(int stdId) throws SQLException {
+        try(Connection cn = dbu.connect();
+            PreparedStatement ps = cn.prepareStatement(qu.stdCourseTc())) {
+            ps.setInt(1, stdId);
 
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()){
+
+                String line = rs.getString("name");
+                for (int i = rs.getString("name").length(); i < 35; i++) {
+                    line += " ";
+                }
+                line += rs.getDouble("finalScore") + "\t";
+                line += rs.getDouble("finalScore") >= 55.0 ? "(Passed)" : "(Failed)";
+//                if(rs.getDouble("finalScore") >= 55.00){
+//                    line += "(Passed)";
+//                } else{
+//                    line += "(Failed)";
+//                }
+                System.out.println(line);
+            }
+        }
     }
 }
