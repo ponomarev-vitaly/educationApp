@@ -142,7 +142,33 @@ public class Main {
                 System.out.println("4. Date of birth -> " + std.getDob());
                 System.out.println("-------------------------------------------------------->");
                 int detail = scan.nextInt();
-                dbs.updateStd(id, detail);
+                String strInput = null;
+                Date dateInput = null;
+
+                switch (detail) {
+                    case 1:
+                        System.out.print(" Please enter First Name > ");
+                        strInput = scan.next().trim().toUpperCase();
+                        break;
+                    case 2:
+                        System.out.print("Please enter Last Name > ");
+                        strInput = scan.next().trim().toUpperCase();
+                        break;
+                    case 3:
+                        System.out.println("Please enter the Gender (F/M) > ");
+                        strInput = scan.next().trim().toUpperCase().substring(0, 1);
+                        break;
+                    case 4:
+                        System.out.println("Please enter Date of birth (yyyy-mm-dd) > ");
+                        dateInput = Date.valueOf(scan.next().trim().toUpperCase());
+                        break;
+                }
+                if(strInput != null || dateInput != null) {
+                    dbs.updateStd(id, detail, strInput, dateInput);
+                }else{
+                    System.out.println("Please enter a valid detail.");
+                }
+
             }
         } else if(input.compareTo("D") == 0) {
             System.out.println("\n\n------------------     STUDENT LIST    ------------------");

@@ -16,4 +16,24 @@ public class QueryUtil {
     public String theStd(){
         return "SELECT * FROM student WHERE student_id = ?";
     }
+
+    public String updateStd(int detail){
+        String result = "UPDATE student SET ";
+        switch (detail) {
+            case 1:
+                result += " fName = ? ";
+                break;
+            case 2:
+                result += " lName = ? ";;
+                break;
+            case 3:
+                result += " gender = ? ";;
+                break;
+            case 4:
+                result += " dob = ? ";;
+                break;
+        }
+        result += " WHERE student_id = ? ";
+        return result;
+    }
 }

@@ -75,21 +75,31 @@ public class DatabaseService {
         return std;
     }
 
-    public void updateStd(int stdId, int detail){
-        System.out.println("We are about to update student " + stdId);
-        switch (detail){
-            case 1:
-                System.out.println("First Name will be updated ");
-                break;
-            case 2:
-                System.out.println("Last Name will be updated ");
-                break;
-            case 3:
-                System.out.println("Gender will be updated ");
-                break;
-            case 4:
-                System.out.println("Date of birth will be updated ");
-                break;
+    public void updateStd(int stdId, int detail, String strInput, Date dateInput) throws SQLException {
+        // System.out.println("We are about to update student " + stdId);
+        try(Connection cn = dbu.connect();
+            PreparedStatement ps = cn.prepareStatement(qu.updateStd(detail));
+            ){
+            switch (detail) {
+                case 1:
+
+                case 2:
+
+                case 3:
+                    ps.setString(1, strInput);
+                    break;
+                case 4:
+                    ps.setDate(1, dateInput);
+                    break;
+            }
+            ps.setInt(2, stdId);
+
+            int check = ps.executeUpdate();
+            if(check > 0){
+                System.out.println("Student updated successfully based on the given input.");
+            }else{
+                System.out.println("Update failed, please run again.");
+            }
         }
     }
 }
