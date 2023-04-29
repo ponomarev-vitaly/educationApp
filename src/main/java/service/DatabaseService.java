@@ -141,4 +141,26 @@ public class DatabaseService {
             }
         }
     }
+
+    public void fpTC(boolean fp) throws SQLException{
+        try(Connection cn = dbu.connect();
+            PreparedStatement ps = cn.prepareStatement(qu.fpTC())){
+            ps.setBoolean(1, fp);
+
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()){
+                String line = rs.getString("stdName");
+                for (int i = line.length(); i < 30; i++) {
+                    line += " ";
+                }
+                line += rs.getString("name");
+                for (int i = line.length(); i < 70; i++) {
+                    line += " ";
+                }
+                line += rs.getString("finalScore");
+                System.out.println(line + "\n");
+            }
+        }
+    }
 }

@@ -47,4 +47,8 @@ public class QueryUtil {
         " TakenCourse tc JOIN Course c on (tc.course_id = c.course_id) " +
         " WHERE student_id = ? ";
     }
+
+    public String fpTC(){
+        return " { CALL fp_sp( ? ) } ";
+    }
 }

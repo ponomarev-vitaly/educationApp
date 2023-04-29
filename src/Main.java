@@ -215,7 +215,13 @@ public class Main {
             dbs.stdCourseTC(stdId);
 
         }if(input.compareTo("L") == 0){
-            System.out.println("Display failed and passed courses");
+            System.out.println("\n\n------------     FAILED/PASSED COURSES    -----------");
+            System.out.println("Select (F)ailed or (P)assed > ");
+            String fp = scan.next().trim().toUpperCase().substring(0,1);
+            System.out.println("\n\n------------     BELOW ARE THE " +
+                    (fp.compareTo("P") == 0 ? "Passed" : "Failed") +
+                    " COURSE ------------");
+            dbs.fpTC(fp.compareTo("P") == 0);
         }if (input.compareTo("M") == 0) {
             tcMenu = false;
             mainMenu = true;
